@@ -83,10 +83,11 @@ gsub_copis
 gsub_microcopis <- gsub(pattern = 'Microcopis', x = species_names, replacement = 'Microcorpis')
 gsub_microcopis
 
-
-
-
-
+# fix both genus names in one go! 
+gsub_both <- gsub('Copis','Copris',
+             gsub('Microcopis','Microcorpis',species_names))
+gsub_both
+                  
 
 
 
