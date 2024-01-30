@@ -36,8 +36,14 @@ sentence[grep_out]
 #‘*’ denotes 0 or more instances.
 #‘+’ denotes 1 or more instances.
 
+sentence[grep(pattern = 'e.?e', x = sentence)]
+#[1] "were"      "everybody" "asleep."   "beetle."  
 
+sentence[grep(pattern = 'e.*e', x = sentence)]
+##[1] "were"      "everybody" "asleep."   "except"    "beetle."   "heavens" 
 
+sentence[grep(pattern = 'e.+e', x = sentence)]
+#[1] "were"      "everybody" "except"    "beetle."   "heavens"  
 
 
 
