@@ -57,6 +57,26 @@ gsub_out2 <- gsub(pattern = 't', x = sentence, replacement = '?')
 gsub_out2
 ##shortened "By"         "?he"        "?ime"       "?hey"
 
+#2.5 The Challenge
+#Load 'dung_beetles.csv'
+db <- read.csv('dung_beetles.csv')
+str(db)
+
+#colnames() Make a new object that is a vector of all the species names
+species_names <- colnames(db)
+
+#use grep() to find the names of all the species that have a genus name that starts with the letter ‘C’
+genus_C <- grep(pattern = '[C-C]', x = species_names)
+genus_C
+##[1] 3 4 5 6 7 8
+
+#Find all the species where the specific epithet (the second word) starts with the letter ‘r’.
+se_r <- grep(pattern = '_r', x = species_names)
+se_r
+##[1]  5  7 36 37 38 56 64
+
+gsub_copis <- gsub(pattern = 'Copis', x = species_names, replacement = 'Corpis')
+gsub_copis
 
 
 
