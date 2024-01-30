@@ -75,8 +75,14 @@ se_r <- grep(pattern = '_r', x = species_names)
 se_r
 ##[1]  5  7 36 37 38 56 64
 
+#Replace all the ‘Copis’ genus names with the correct ‘Copris’ spelling.
 gsub_copis <- gsub(pattern = 'Copis', x = species_names, replacement = 'Corpis')
 gsub_copis
+
+# ‘Microcopis’ should be ‘Microcopris’. Fix this too.
+gsub_microcopis <- gsub(pattern = 'Microcopis', x = species_names, replacement = 'Microcorpis')
+gsub_microcopis
+
 
 
 
