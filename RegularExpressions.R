@@ -30,3 +30,21 @@ sentence[grep_out]
 ##"awake"   "save"    "case"    "heavens"
 
 #2.3 Quantifiers
+#These allow the user to specify how many of a character grep() is matching to
+#The main three symbols are ? * +
+#‘?’ denotes 0 or 1 instances.
+#‘*’ denotes 0 or more instances.
+#‘+’ denotes 1 or more instances.
+
+
+
+
+
+
+
+
+
+
+
+
+
