@@ -45,6 +45,20 @@ sentence[grep(pattern = 'e.*e', x = sentence)]
 sentence[grep(pattern = 'e.+e', x = sentence)]
 #[1] "were"      "everybody" "except"    "beetle."   "heavens"  
 
+#2.4 The gsub() function
+#The 'gsub()' function can be used to search for text in the same way as the 'grep()'
+#It instead substitutes the matched text with text of our choosing.
+gsub_out <- gsub(pattern = 'a.e', x = sentence, replacement = '!!!')
+gsub_out
+##shortened  "c!!!"       "the"        "he!!!ns
+
+#Q. replace all the letter ’t’s with question marks.
+gsub_out2 <- gsub(pattern = 't', x = sentence, replacement = '?')
+gsub_out2
+##shortened "By"         "?he"        "?ime"       "?hey"
+
+
+
 
 
 
