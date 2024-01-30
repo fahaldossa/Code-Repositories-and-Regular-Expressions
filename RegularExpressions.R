@@ -17,5 +17,16 @@ grep_out2
 sentence[grep_out2]
 ##[1] "the" "the" "the" "the" "the" "the"
 
-#2.2 
+#2.2 Regular Expression Tools
+#Regular expressions can search much more flexibly
+grep_out <- grep(pattern = '[A-Z]', x = sentence)
+grep_out
+##[1]  1 16 21 22 26
 
+#Using character '.' 
+#If we search for 'a.e' we are looking for matches where there is an 'a' and an 'e' separated by any character.
+grep_out <- grep(pattern = 'a.e', x = sentence)
+sentence[grep_out]
+##"awake"   "save"    "case"    "heavens"
+
+#2.3 Quantifiers
